@@ -1,0 +1,131 @@
+.subscriptions {
+	margin: 3rem 0rem;
+	font-weight: 500;
+}
+.subscription {
+	font-size: 1rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #e7e7e7;
+	padding: 1rem;
+	border: 2px solid #bebebe;
+	border-radius: 0.4rem;
+	margin: 2rem 0rem;
+	transition: all 0.3s ease;
+}
+.subscription:hover {
+	background-color: #d7eddd;
+	scale: 1.02;
+}
+
+.fade {
+	opacity: 0.5;
+}
+.info label {
+	font-size: 1.5rem;
+	padding: 1rem;
+}
+.subscription.selected {
+	background-color: #d7eddd;
+	border: 2px solid #47ba68;
+	transition: all 0.3s ease;
+}
+.subscription {
+	position: relative;
+}
+
+.offer-expired-label {
+	position: absolute;
+	top: 0;
+	left: 4rem;
+	background-color: #de4313;
+	color: white;
+	padding: 0rem 5rem;
+	font-size: 1rem;
+	border-radius: 0rem 0rem 0.4rem 0.4rem;
+}
+.subscription.expired {
+	scale: 1;
+}
+.subscription.expired label {
+	opacity: 0.5;
+}
+.subscription.expired:hover {
+	font-size: 1rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #f77171;
+	padding: 1rem;
+	border-radius: 0.8rem;
+	margin: 2rem 0rem;
+	filter: none;
+}
+.subscription.expired:active {
+	background: #f77171;
+	border: 2px solid #ff0000;
+	filter: drop-shadow(0 0 0.5rem #ff0000);
+}
+.recommended-label {
+	position: absolute;
+	top: 0;
+	left: 4rem;
+	background-color: #47ba68;
+	color: #fff;
+	padding: 0rem 5rem;
+	font-size: 1rem;
+	border-radius: 0rem 0rem 0.4rem 0.4rem;
+}
+
+.subscription .radio-input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.subscription .radio-input:checked + .label {
+	background-color: inherit;
+}
+
+.subscription .radio-input:checked + .label::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	transform: translate(-50%, -50%);
+	width: 0.2rem;
+	height: 0.2rem;
+	background-color: #47ba68;
+	padding: 1rem;
+	border: 2px solid #47ba68;
+	border-radius: 100%;
+	transition: all 0.3s ease;
+}
+
+.subscription .label {
+	position: relative;
+	padding-left: 3rem;
+	cursor: pointer;
+}
+
+.subscription .label::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border: 2px solid #bebebe;
+	border-radius: 50%;
+}
+
+.tick-icon {
+	color: #ffffff;
+	position: absolute;
+	left: 1%;
+}

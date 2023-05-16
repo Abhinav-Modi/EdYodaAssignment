@@ -1,12 +1,12 @@
 .banner-container {
 	display: grid;
-	grid-template-columns: 1fr 0.5fr;
+	grid-template-columns: 0.8fr 0.5fr;
 }
 .statistics-container {
 	margin-top: 5rem;
 	font-family: "Roboto", sans-serif;
 	font-weight: 600;
-	font-size: 3.2rem;
+	font-size: 2rem;
 }
 .statistics-icon {
 	width: 4rem;
@@ -19,4 +19,164 @@
 .content {
 	margin-left: 3rem;
 	margin-right: 0.8rem;
+}
+.form-container {
+	font-size: 1rem;
+	background-color: #ffffff;
+	color: #000000;
+	padding: 2rem 1.5rem;
+	border-radius: 0.8rem;
+	line-height: 1.9rem;
+	max-width: 48rem;
+	margin: auto;
+}
+.login-icon {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.login {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.login-icon h4 {
+	background: #0096ff;
+	border-radius: 100rem;
+	padding: 1rem 1.6rem;
+	color: #ffffff;
+	font-size: 1.2rem;
+}
+.login-icon p {
+	margin-top: 1rem;
+	font-size: 1rem;
+}
+.sub {
+	font-weight: 600;
+	text-align: center;
+	margin-top: 2rem;
+	font-size: 1.5rem;
+}
+.break {
+	border: 2px solid #bebebe;
+}
+.sub-fee {
+	font-weight: 400;
+	color: #3c4852;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 1rem;
+}
+.offer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 1rem;
+	padding: 1rem;
+	border-radius: 0.8rem;
+	margin: 2rem 0rem;
+	filter: none;
+	position: relative;
+}
+
+.offer-time {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.offer-time img {
+	margin: 0 1rem;
+}
+.final-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 3rem 0rem;
+}
+.btn {
+	padding: 1.5rem 7rem;
+	border-radius: 0.4rem;
+	font-size: 1.3rem;
+	font-weight: 600;
+	border: none;
+}
+.cancel {
+	background-color: #ffffff;
+	color: #f77171;
+	border: 2px solid #f77171;
+	transition: all 0.3s ease;
+}
+.cancel:hover {
+	background-color: #f77171;
+	color: #ffffff;
+	border: 2px solid #f77171;
+	filter: drop-shadow(0 0 1.5rem #f77171);
+	scale: 1.05;
+}
+.cancel:active {
+	filter: drop-shadow(0 0 1rem #f77171);
+	transform: scale(0.95);
+}
+
+.pay {
+	background-color: #47ba68;
+	color: #ffffff;
+	border: 2px solid #47ba68;
+	transition: all 0.3s ease;
+}
+.pay:hover {
+	background-color: #47ba68;
+	color: #ffffff;
+	border: 2px solid #47ba68;
+	filter: drop-shadow(0 0 1.5rem #47ba68);
+	scale: 1.05;
+}
+.pay:active {
+	filter: drop-shadow(0 0 1rem #47ba68);
+	transform: scale(0.95);
+}
+.amount {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.offer {
+	position: relative;
+	background-color: #f771713f;
+	color: #de4313;
+}
+.offer ::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 0.8rem;
+	padding: 2px;
+	background: linear-gradient(
+		135deg,
+		rgba(222, 67, 19, 0.2) 0%,
+		rgba(222, 67, 19, 0.2) 0.75%,
+		rgba(222, 67, 19, 0.2) 2.92%,
+		rgba(222, 68, 20, 0.2) 6.37%,
+		rgba(223, 69, 21, 0.2) 10.97%,
+		rgba(223, 72, 22, 0.2) 16.59%,
+		rgba(224, 75, 24, 0.2) 23.1%,
+		rgba(225, 80, 27, 0.2) 30.37%,
+		rgba(227, 86, 31, 0.2) 38.27%,
+		rgba(229, 94, 36, 0.2) 46.66%,
+		rgba(231, 104, 43, 0.2) 55.41%,
+		rgba(235, 117, 51, 0.2) 64.39%,
+		rgba(238, 132, 60, 0.2) 73.47%,
+		rgba(243, 149, 71, 0.2) 82.52%,
+		rgba(248, 169, 84, 0.2) 91.41%,
+		rgba(254, 193, 99, 0.2) 100%
+	);
+	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+	-webkit-mask-composite: xor;
+	mask-composite: exclude;
 }
