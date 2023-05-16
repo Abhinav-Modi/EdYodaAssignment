@@ -22,8 +22,8 @@ const SUBSCRIPTIONS = [
 	{
 		name: "subscription2",
 		detail: "6 Months Subscription",
-		total: 179,
-		monthly: 15,
+		total: 180,
+		monthly: 30,
 		offerAmount: 30,
 		isRecommended: true,
 		isOfferExpired: false,
@@ -31,18 +31,18 @@ const SUBSCRIPTIONS = [
 	{
 		name: "subscription3",
 		detail: "3 Months Subscription",
-		total: 149,
-		monthly: 25,
-		offerAmount: 20,
+		total: 120,
+		monthly: 40,
+		offerAmount: 15,
 		isRecommended: false,
 		isOfferExpired: false,
 	},
 	{
 		name: "subscription4",
 		detail: "1 Month Subscription",
-		total: 99,
-		monthly: 33,
-		offerAmount: 10,
+		total: 50,
+		monthly: 50,
+		offerAmount: 7,
 		isRecommended: false,
 		isOfferExpired: false,
 	},
@@ -204,7 +204,7 @@ const Home = () => {
 									<div className="final">
 										<div className="final-content">
 											<h3>
-												Total <span>(Incl of 18% GST)</span>{" "}
+												Total <span className="fade">(Incl of 18% GST)</span>{" "}
 											</h3>
 											<h3 className="final-amount">{getSubscriptionFee()}</h3>
 										</div>

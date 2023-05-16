@@ -3,10 +3,10 @@
 	grid-template-columns: 0.8fr 0.5fr;
 }
 .statistics-container {
-	margin-top: 5rem;
+	margin-top: 10rem;
 	font-family: "Roboto", sans-serif;
 	font-weight: 600;
-	font-size: 2rem;
+	font-size: 3rem;
 }
 .statistics-icon {
 	width: 4rem;
@@ -14,7 +14,7 @@
 .statistics-content {
 	display: flex;
 	align-items: center;
-	margin: 4rem 0rem;
+	margin: 5rem 0rem;
 }
 .content {
 	margin-left: 3rem;
@@ -43,19 +43,19 @@
 .login-icon h4 {
 	background: #0096ff;
 	border-radius: 100rem;
-	padding: 1rem 1.6rem;
+	padding: 0.5rem 1rem;
 	color: #ffffff;
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 }
 .login-icon p {
 	margin-top: 1rem;
-	font-size: 1rem;
+	font-size: 1.2rem;
 }
 .sub {
 	font-weight: 600;
 	text-align: center;
 	margin-top: 2rem;
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 }
 .break {
 	border: 2px solid #bebebe;
@@ -179,4 +179,10 @@
 	-webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
 	-webkit-mask-composite: xor;
 	mask-composite: exclude;
+}
+@media screen and (max-width: 1000px) {
+	.banner-container {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
 }

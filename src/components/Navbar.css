@@ -117,3 +117,32 @@
 	margin: 0 1rem;
 	font-size: 2rem;
 }
+
+@media screen and (max-width: 768px) {
+	.navbar {
+		padding: 1rem;
+	}
+
+	.logo {
+		margin-right: 1rem;
+	}
+
+	.dropdown {
+		margin-right: 0.5rem;
+	}
+
+	.dropdown-content {
+		padding: 0.5rem;
+		min-width: 8rem;
+	}
+
+	.search-button,
+	.login-button,
+	.join-now-button {
+		padding: 0.5rem;
+	}
+
+	.search-icon {
+		font-size: 1.5rem;
+	}
+}
