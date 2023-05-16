@@ -1,0 +1,22 @@
+.banner-container {
+	display: grid;
+	grid-template-columns: 1fr 0.5fr;
+}
+.statistics-container {
+	margin-top: 5rem;
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	font-size: 3.2rem;
+}
+.statistics-icon {
+	width: 4rem;
+}
+.statistics-content {
+	display: flex;
+	align-items: center;
+	margin: 4rem 0rem;
+}
+.content {
+	margin-left: 3rem;
+	margin-right: 0.8rem;
+}
