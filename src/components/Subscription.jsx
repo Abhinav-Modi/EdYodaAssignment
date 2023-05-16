@@ -27,7 +27,7 @@ const Subscription = (props) => {
 					type="radio"
 					className="radio-input"
 					name="subscription"
-					checked={props.isSelected}
+					checked={props.isSelected ? "checked" : ""}
 					readOnly
 				/>
 				<label className="label">
